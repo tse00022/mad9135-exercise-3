@@ -7,4 +7,5 @@ void main(List<String> arguments) {
     {'name': 'Bob', 'age': '25', "id": "2"},
   ]);
   s.sort("id");
+  s.output();
 }
