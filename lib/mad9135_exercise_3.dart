@@ -8,11 +8,19 @@ class Student {
   }
 
   sort(String field) {
+    if (!students.first.containsKey(field)) {
+      throw ArgumentError("Field $field not found in student list");
+    }
     students.sort((a, b) => a[field]!.compareTo(b[field]!));
   }
 
   plus(Map<String, String> student) {
     students.add(student);
+  }
+
+  remove(String field) {
+    // search for values of all possible keys, if match found, remove the student
+    students.removeWhere((s) => s.containsValue(field));
   }
 
   output() {
