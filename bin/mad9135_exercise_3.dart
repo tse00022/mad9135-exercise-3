@@ -6,6 +6,7 @@ void main(List<String> arguments) {
     {'name': 'Alice', 'age': '30', "id": "1"},
     {'name': 'Bob', 'age': '25', "id": "2"},
   ]);
+  s.plus({'name': 'David', 'age': '10', "id": "0"});
   s.sort("id");
   s.output();
 }

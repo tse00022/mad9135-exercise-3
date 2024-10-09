@@ -11,6 +11,10 @@ class Student {
     students.sort((a, b) => a[field]!.compareTo(b[field]!));
   }
 
+  plus(Map<String, String> student) {
+    students.add(student);
+  }
+
   output() {
     students.forEach((s) {
       print("$s");
