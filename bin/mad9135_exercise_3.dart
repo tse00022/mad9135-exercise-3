@@ -1,5 +1,10 @@
-import 'package:mad9135_exercise_3/mad9135_exercise_3.dart' as mad9135_exercise_3;
+import 'package:mad9135_exercise_3/mad9135_exercise_3.dart';
 
 void main(List<String> arguments) {
-  print('Hello world: ${mad9135_exercise_3.calculate()}!');
+  Student s = Student([
+    {'name': 'Charlie', 'age': '35', "id": "3"},
+    {'name': 'Alice', 'age': '30', "id": "1"},
+    {'name': 'Bob', 'age': '25', "id": "2"},
+  ]);
+  s.sort("id");
 }
